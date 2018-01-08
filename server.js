@@ -1,9 +1,11 @@
 const express = require('express');
 const ejs = require('ejs');
+const path = require('path');
 const wool = require('./extra/classes/woolClass.js');
 const needle = require('./extra/classes/needleClass.js');
 
 var app = express();
+global.appRoot = path.resolve(__dirname);
 
 function test() {
 	return new wool('black',3,'praxis',5,8);

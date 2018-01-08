@@ -5,9 +5,9 @@ function handleData(data) {
 	$("#wool_catelog").append(data);
 }
 
-$(document).ready(function(){
-	$.ajax({
-		url: "/getWool",
-		success: handleData
-	})
-});
+// $(document).ready(function(){
+// 	$.ajax({
+// 		url: "/getWool",
+// 		success: handleData
+// 	})
+// });
