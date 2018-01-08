@@ -8,11 +8,22 @@
 	<body>
 		<nav>
 			<h1>Header goes here</h1>
+			<a href="/html/test">Test</a>
+			<a href="/html/anothertest">Test</a>
 		</nav>
 
 		<body>
 			<h1>Body goes here</h1>
-			<div id="wool_catelog"></div>
+			<% wool_array.forEach(function(wool) { %>
+				<div class="article">
+					<div><%= wool.brand %></div>
+					<div><%= wool.colour %></div>
+					<div><%= wool.length %></div>
+					<div><%= wool.price %></div>
+					<div><%= wool.amount %></div>
+					<img src='<%= wool.link %>' alt='Bol wol van de <%=wool.brand %>'/>
+				</div>
+			<% }) %>
 		</body>
 
 		<footer>
@@ -20,3 +31,4 @@
 		</footer>
 	</body>
 </html>
+
